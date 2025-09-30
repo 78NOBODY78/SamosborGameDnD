@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateCharacterWindow</class>
+ <widget class="QWidget" name="CreateCharacterWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>410</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>410</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="lineEditName">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+background: transparent;
+border: 2px solid black;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>141</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Имя персонажа</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtMale">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>60</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Мужчина</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonFemale">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>20</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Женщина</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxClass">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>330</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>330</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>330</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+background: transparent;
+border: 2px solid black;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Офицер Службы Безопасности</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Медик</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Инженер</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Механик</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Помошник</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButtonHelpClass">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>60</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background: none;
+	border:none;
+	image: url(:/images/images/SS_PB_CSCW_Clarification.png);
+    }
+QPushButton:hover {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_hover.png);
+}
+QPushButton:pressed {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_push.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxStrenght">
+   <property name="geometry">
+    <rect>
+     <x>691</x>
+     <y>20</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+background: none;
+border: 2px solid black;
+}</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxAgility">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>60</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+background: transparent;
+border: 2px solid black;
+}</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxIntelligence">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>100</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+background: transparent;
+border: 2px solid black;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelStrength">
+   <property name="geometry">
+    <rect>
+     <x>588</x>
+     <y>20</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Сила</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelAgility">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>60</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Ловкость</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelIntelligence">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>100</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Интелект</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCreate">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>310</y>
+     <width>200</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	image: url(:/images/images/SS_PB_PMW_Create2.png);
+	background: none;
+	border:none;
+    }
+QPushButton:hover {
+	image: url(:/images/images/SS_PB_PMW_Create2_hover.png);
+}
+QPushButton:pressed {
+	image: url(:/images/images/SS_PB_PMW_Create2_push.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtoSave">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>310</y>
+     <width>200</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background: none;
+	border: 2px solid black;
+}
+QPushButton:hover {
+	background: none;
+	border: 2px solid red;
+	color: red;
+}
+QPushButton:pressed {
+	background: none;
+	border: 2px solid #8B0000;
+	color: #8B0000;
+}</string>
+   </property>
+   <property name="text">
+    <string>СОХРАНИТЬ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonBack">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>310</y>
+     <width>200</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	image: url(:/images/images/SS_PB_CCW_Cancel2.png);
+	background: none;
+	border:none;
+    }
+QPushButton:hover {
+	image: url(:/images/images/SS_PB_CCW_Cancel2_hover.png);
+}
+QPushButton:pressed {
+	image: url(:/images/images/SS_PB_CCW_Cancel2_push.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelWeaponSkillName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Оружие</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMedicineSkillName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Медицина</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMechanicSkillName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Механика</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labClass">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Класс</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labeSskils">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Навыки</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelElectronicsSkillName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Электроника</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labeTraitsName">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>100</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Особенности</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointsLeft">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>140</y>
+     <width>191</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Осталось очков 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMedicineSkill">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>180</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMechanicSkill">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>220</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>180</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelElectronicsSkill">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>260</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>180</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelWeaponSkill">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>140</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>180</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTraits1">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>140</y>
+     <width>270</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>270</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>270</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTraits2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>180</y>
+     <width>270</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>270</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>270</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTraits3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>220</y>
+     <width>270</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>270</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>270</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonTraitsHelp1">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>140</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background: none;
+	border:none;
+	image: url(:/images/images/SS_PB_CSCW_Clarification.png);
+    }
+QPushButton:hover {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_hover.png);
+}
+QPushButton:pressed {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_push.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonTraitsHelp2">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>180</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background: none;
+	border:none;
+	image: url(:/images/images/SS_PB_CSCW_Clarification.png);
+    }
+QPushButton:hover {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_hover.png);
+}
+QPushButton:pressed {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_push.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonTraitsHelp3">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>220</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background: none;
+	border:none;
+	image: url(:/images/images/SS_PB_CSCW_Clarification.png);
+    }
+QPushButton:hover {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_hover.png);
+}
+QPushButton:pressed {
+	image: url(:/images/images/SS_PB_CSCW_Clarification_push.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>410</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/images/images/SS_L_CCW_BG.png);</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>lineEditName</zorder>
+  <zorder>labelName</zorder>
+  <zorder>radioButtMale</zorder>
+  <zorder>radioButtonFemale</zorder>
+  <zorder>comboBoxClass</zorder>
+  <zorder>pushButtonHelpClass</zorder>
+  <zorder>spinBoxStrenght</zorder>
+  <zorder>spinBoxAgility</zorder>
+  <zorder>spinBoxIntelligence</zorder>
+  <zorder>labelStrength</zorder>
+  <zorder>labelAgility</zorder>
+  <zorder>labelIntelligence</zorder>
+  <zorder>pushButtonCreate</zorder>
+  <zorder>pushButtoSave</zorder>
+  <zorder>pushButtonBack</zorder>
+  <zorder>labelWeaponSkillName</zorder>
+  <zorder>labelMedicineSkillName</zorder>
+  <zorder>labelMechanicSkillName</zorder>
+  <zorder>labClass</zorder>
+  <zorder>labeSskils</zorder>
+  <zorder>labelElectronicsSkillName</zorder>
+  <zorder>labeTraitsName</zorder>
+  <zorder>labelPointsLeft</zorder>
+  <zorder>labelMedicineSkill</zorder>
+  <zorder>labelMechanicSkill</zorder>
+  <zorder>labelElectronicsSkill</zorder>
+  <zorder>labelWeaponSkill</zorder>
+  <zorder>labelTraits1</zorder>
+  <zorder>labelTraits2</zorder>
+  <zorder>labelTraits3</zorder>
+  <zorder>pushButtonTraitsHelp1</zorder>
+  <zorder>pushButtonTraitsHelp2</zorder>
+  <zorder>pushButtonTraitsHelp3</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

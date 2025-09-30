@@ -1,0 +1,92 @@
+<RCC>
+	<qresource prefix="/fonts">
+		<file>fonts/clacon2.ttf</file>
+		<file>fonts/B52.ttf</file>
+	</qresource>
+	
+	<qresource prefix="/images">
+	
+        <!-- Backgrounds -->
+        <file>images/SS_L_CCW_BG.png</file>
+        
+        <!-- Push Buttons -->
+        <file>images/SS_PB_CCW_Cancel2_hover.png</file>
+        <file>images/SS_PB_CCW_Cancel2.png</file>
+        <file>images/SS_PB_CCW_Cancel2_push.png</file>
+        <file>images/SS_PB_CCW_Cancel_hover.png</file>
+        <file>images/SS_PB_CCW_Cancel.png</file>
+        <file>images/SS_PB_CCW_Cancel_push.png</file>
+        <file>images/SS_PB_CCW_Create_hover.png</file>
+        <file>images/SS_PB_CCW_Create_hover_push.png</file>
+        <file>images/SS_PB_CCW_Create.png</file>
+        <file>images/SS_PB_CCW_Save2_hover.png</file>
+        <file>images/SS_PB_CCW_Save2_push.png</file>
+        <file>images/SS_PB_CCW_Save_hover.png</file>
+        <file>images/SS_PB_CCW_Save.png</file>
+        <file>images/SS_PB_CCW_Save_push.png</file>
+        
+        <!-- Backgrounds -->
+        <file>images/SS_L_GMW_BG.png</file>
+        
+        <!-- Push Buttons -->
+        <file>images/SS_PB_GMW_Master_hover.png</file>
+        <file>images/SS_PB_GMW_Master.png</file>
+        <file>images/SS_PB_GMW_Master_push.png</file>
+        <file>images/SS_PB_GMW_Player_hover.png</file>
+        <file>images/SS_PB_GMW_Player.png</file>
+        <file>images/SS_PB_GMW_Player_push.png</file>
+
+        <!-- Backgrounds -->
+        <file>images/SS_L_MCW_BattleWidget.png</file>
+        
+        <!-- Push Buttons -->
+        <file>images/SS_PB_MCW_Back_hover.png</file>
+        <file>images/SS_PB_MCW_Back.png</file>
+        <file>images/SS_PB_MCW_Back_push.png</file>
+        <file>images/SS_PB_MCW_EndBattle_hover.png</file>
+        <file>images/SS_PB_MCW_EndBattle.png</file>
+        <file>images/SS_PB_MCW_EndBattle_push.png</file>
+        <file>images/SS_PB_MCW_StartBattle_hover.png</file>
+        <file>images/SS_PB_MCW_StartBattle.png</file>
+        <file>images/SS_PB_MCW_StartBattle_push.png</file>
+
+        <!-- Backgrounds -->
+        <file>images/SS_L_MM.png</file>
+        
+        <!-- Push Buttons -->
+        <file>images/SS_PB_MM_Exit.png</file>
+        <file>images/SS_PB_MM_Go.png</file>
+
+        <!-- Push Buttons -->
+        <file>images/SS_PB_PMW_Create2_hover.png</file>
+        <file>images/SS_PB_PMW_Create2.png</file>
+        <file>images/SS_PB_PMW_Create2_push.png</file>
+        <file>images/SS_PB_PMW_Create_hover.png</file>
+        <file>images/SS_PB_PMW_Create.png</file>
+        <file>images/SS_PB_PMW_Create_push.png</file>
+        <file>images/SS_PB_PMW_Play_hover.png</file>
+        <file>images/SS_PB_PMW_Play.png</file>
+        <file>images/SS_PB_PMW_Play_push.png</file>
+
+        <!-- Backgrounds -->
+        <file>images/SS_L_SCW_BG.png</file>
+        
+        <!-- Push Buttons -->
+        <file>images/SS_PB_SCW_Back_hover.png</file>
+        <file>images/SS_PB_SCW_Back.png</file>
+        <file>images/SS_PB_SCW_Back_push.png</file>
+        <file>images/SS_PB_SCW_TalentTree_hover.png</file>
+        <file>images/SS_PB_SCW_TalentTree.png</file>
+        <file>images/SS_PB_SCW_TalentTree_push.png</file>
+
+        <!-- Push Buttons -->
+        <file>images/SS_PB_SMCW_Search.png</file>
+        <file>images/SS_PB_SMCW_Search_push.png</file>
+        <file>images/SS_PB_SMCW_Search_hover.png</file>
+        
+        <!-- Push Buttons -->
+        <file>images/SS_PB_CSCW_Clarification.png</file>
+        <file>images/SS_PB_CSCW_Clarification_hover.png</file>
+        <file>images/SS_PB_CSCW_Clarification_push.png</file>
+    </qresource>
+</RCC>

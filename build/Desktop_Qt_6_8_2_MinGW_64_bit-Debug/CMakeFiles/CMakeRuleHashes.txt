@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+d6c7046af1541b0cd5c8ddbb24f918e4 CMakeFiles/SamosborGameDnD_autogen
+8bab60cb0fad8b5fe8842f8623fa2bce SamosborGameDnD_autogen/EWIEGA46WW/qrc_resource.cpp
+11ddc34086fde0c2beadf3460131db1f SamosborGameDnD_autogen/timestamp
